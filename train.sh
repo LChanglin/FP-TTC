@@ -1,0 +1,14 @@
+OMP_NUM_THREADS=8 torchrun --standalone --nnodes=1 --nproc_per_node=4 train.py \
+--resume ./pretrained/fpttc_mix.pth.tar \
+--padding_factor 32 \
+--upsample_factor 4 \
+--num_scales 2 \
+--attn_splits_list 2 8 \
+--corr_radius_list -1 4 \
+--prop_radius_list -1 1 \
+--epoch 30 \
+--lr 4e-5 \
+--batch_size 4 \
+--stage 'mix' \
+--image_size 320 640 \
+--parallel \
