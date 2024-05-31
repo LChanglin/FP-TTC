@@ -46,22 +46,22 @@ Download Driving and KITTI for training.
 
 ```bash
 Datasets
-	|-- Driving
-    |   |-- camera_data
-    |   |-- disparity
-    |   |-- disparity_change
-    |   |-- frames_cleanpass
-    |   `-- optical_flow
-	`-- kitti
-        |-- data_scene_flow
-        |   |-- testing
-        |   `-- training
-        |-- data_scene_flow_calib
-        |   |-- testing
-        |   `-- training
-        `-- data_scene_flow_multi
-            |-- testing
-             training
+|-- Driving
+|   |-- camera_data
+|   |-- disparity
+|   |-- disparity_change
+|   |-- frames_cleanpass
+|   `-- optical_flow
+`-- kitti
+    |-- data_scene_flow
+    |   |-- testing
+    |   `-- training
+    |-- data_scene_flow_calib
+    |   |-- testing
+    |   `-- training
+    `-- data_scene_flow_multi
+    |-- testing
+    `--training
 ```
 
 
