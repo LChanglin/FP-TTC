@@ -36,21 +36,23 @@ pip install -r requirements.txt
 git clone https://github.com/LChanglin/FP-TTC.git
 ```
 
+4. download our pretrained weights from [link](https://drive.google.com/drive/folders/1WL2cuKDt2YPERB8WaAScX9qbO4x4p4hI?usp=sharing).
+
 
 
 ### Datasets
 
 Download Driving and KITTI for training. 
 
-```
+```bash
 Datasets
 	|-- Driving
-        |-- camera_data
-        |-- disparity
-        |-- disparity_change
-        |-- frames_cleanpass
-        `-- optical_flow
-	|-- kitti
+    |   |-- camera_data
+    |   |-- disparity
+    |   |-- disparity_change
+    |   |-- frames_cleanpass
+    |   `-- optical_flow
+	`-- kitti
         |-- data_scene_flow
         |   |-- testing
         |   `-- training
@@ -59,7 +61,7 @@ Datasets
         |   `-- training
         `-- data_scene_flow_multi
             |-- testing
-            `-- training
+             training
 ```
 
 
@@ -102,10 +104,10 @@ CUDA_VISIBLE_DEVICES=0 python evaluation.py \
 
 The evaluation results will be saved as .npy.
 
-| Pretrained Weights  | Mid Error |
-| ------------------- | --------- |
-| fpttc_kitti.pth.tar | **59.35** |
-| fpttc_mix.pth.tar   | 62.30     |
+| Pretrained Weights       | Mid Error |
+| ------------------------ | --------- |
+| fintuned on kitti        | **59.35** |
+| trained on mixed dataset | 62.30     |
 
 
 
